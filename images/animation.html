@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 400px;
+            border: 2px solid red;
+        }
+        .box{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: yellow;
+            position: relative;
+            animation: tenis 1s ease-in-out 1s infinite alternate forwards;
+        }
+
+        @keyframes tenis {
+            from {left: 0; }
+            to {left: 400px; background-color: red; width: 80px ;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
